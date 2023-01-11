@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input::placeholder{
+    color: #A0A9AE !important;
+}
+textarea::placeholder{
+    color: #A0A9AE !important;
+}
+.react-responsive-modal-container{
+    background-color: #48588C !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.react-responsive-modal-modal{
+    min-width: 620px;
+    background: #FFFFFF;
+    border: 1px solid #E7EBEE;
+    border-radius: 5px;
+}
+.react-responsive-modal-modal.small-medium{
+    min-width: 380px;
+    max-width: 380px;
+}
+.react-responsive-modal-closeButton svg{
+    fill: #535768;
+}
+.react-responsive-modal-root .modal-large{
+    min-width: 1050px !important;
+}
+.modal-full-height+.react-responsive-modal-container{
+    align-items: flex-start;
+}
+.circled [type='checkbox']:checked{
+    background-image: url('./assets/icons/checkbox-icon.svg');
+    background-color: transparent;
+    outline: 0px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+.custom-scroller::-webkit-scrollbar {
+    width: 5px;
+}       
+.custom-scroller::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.custom-scroller::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+select.white{
+    background-image: url('./assets/icons/arrow-down-white.svg');
+    background-size: 10px;
+    background-position: top 15px right 10px;
+}
+
+/* React input continer component */
+.rti--container{
+    position: relative;
+    padding-top: 61px !important;
+    border: none !important;
+    padding-left: 0px !important;
+    max-width: 580px;
+    box-shadow: none !important;
+    border: none !important;
+    outline: 0px !important;
+    width: 100%;
+}
+
+.rti--container .rti--tag{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+    font-family: 'Karla', 'sans-serif';
+    background: #0089FF;
+    border-radius: 4px;
+    height: 32px;
+    color: #fff;
+    padding: 5px 8px;
+}
+.rti--container .rti--tag button{
+    border: 1px solid #fff;
+    width: 16px !important;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 16px !important;
+    max-width: 16px !important;
+    padding: 6px;
+    font-size: 13px;
+    margin-left: 6px;
+    color: #fff;
+}
+.rti--container .rti--tag button:hover{
+    color: #fff;
+}
+.rti--container:focus{
+    box-shadow: none !important;
+    border: none !important;
+    outline: 0px !important;
+}
+.rti--container input{
+    outline: 0px;
+    height: 50px;
+    max-width: 580px;
+    border:1px solid #A0A9AE !important;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    border-radius: 4px;
+}
+.rti--container input:focus{
+    box-shadow: none;
+}
+/* React input continer component */
+
+.react-tags__search-input{
+    width: 100% !important;
+    height: 60px;
+    border: 1px solid #A0A9AE;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: Karla, sans-serif;
+}
+.react-tags__search-input:focus{
+    outline-color: #0089FF !important;
+}
+.react-tags__suggestions{
+    background-color: #F4F4F8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.react-tags__suggestions li{
+    cursor: pointer;
+    padding: 5px 7px;
+}
+.react-tags, .react-tags__search-wrapper input{
+    max-width: 540px;
+}
+.react-tags__selected{
+    margin-bottom: 10px;
+}
+.react-tags__selected-tag{
+    font-size: 12px;
+    background-color: #0089FF;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    padding: 2px 4px;
+    margin-right: 7px;
+}
+
+.spaceTbody:before {
+    line-height:1em;
+    content:"-";
+    color:white; /* to hide text */
+    display:block;
+}
+
+/* React Pagination */
+
+.rpb-root{
+    width: 100%;
+}
+#rpb-pagination{
+    padding: 30px 0px;
+    justify-content: center;
+    width: 100%;
+}
+#rpb-pagination li:first-child{
+    display: none;
+}
+#rpb-pagination li:last-child{
+    display: none;
+}
+#rpb-pagination li .rpb-item{
+    box-shadow: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #777777;
+    border-radius: 50%;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    width: 35px;
+    height: 35px;
+    max-width: 35px;
+    min-width: 35px;
+    font-family: 'Karla', 'sans-serif';
+}
+#rpb-pagination li .rpb-item.rpb-item--active{
+    color: #fff;
+}
